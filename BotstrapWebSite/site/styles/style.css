@@ -260,8 +260,6 @@ margin-right: 60px;
 }
 
 .stats-item {
-  align-items: center;
-  text-align: center;
   padding-top: 94px;
   padding-bottom: 93px;
 }
@@ -270,25 +268,13 @@ margin-right: 60px;
   padding-bottom: 58px;
 }
 
-.row-portfolio-text,
-.row-portfolio-buttons {
-  align-items: center;
-  text-align: center;
-}
-
 .row-portfolio-text {
-  text-align: center;
+
   width: 745px;
   margin: 0 auto;
 }
 
-.col-portfolio-text p {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.64px;
-  color: #969595;
-}
+
 
 .row-portfolio-text {
   margin-top: 129px;
@@ -306,19 +292,19 @@ margin-right: 60px;
   color: #181a1f;
   font-weight: 600;
   background: none;
-  border: 1px solid #ffda00;
+  border: 3px solid #ffda00;
   margin-right: 9px;
 }
 
 .btn-primary:hover {
-    color: #181a1f;
-    background-color: #ffda00;
-    border-color: #ffda00;
+  color: #181a1f;
+  background-color: #ffda00;
+  border-color: #ffda00;
 }
 
-.btn-primary:active {
+/* .btn-primary:active {
   background-color: #ffda00;
-}
+} */
 
 .btn-primary:focus {
   color: #181a1f;
@@ -326,29 +312,86 @@ margin-right: 60px;
   border-color: #ffda00
 }
 
-.btn-check:focus+.btn-primary, .btn-primary:focus {
-    color: #181a1f;
-    background: #ffda00;
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    background-color: #ffda00;
     border-color: #ffda00;
 }
 
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+  color: #181a1f;
+  background: #ffda00;
+  border-color: #ffda00;
+  border-width: 3px;
+}
 
-.col-portfolio-text h2 {
+
+
+
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 1px rgba(255,165,20,.5);
+}
+
+.creative-h2 {
   font-size: 36px;
   line-height: 2.67;
   color: #333;
   margin: 0;
 }
 
-.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 .25rem rgba(49,132,253,.5);
-}
-
-.col-portfolio-text p {
-  font-family: "OpenSans", "Arial", sans-serif;
+.creative-p {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.63;
   margin: 0;
   letter-spacing: 0.64px;
   color: #969595;
+}
+
+.row-creative-service-head {
+
+  width: 745px;
+  margin: 0 auto;
+  margin-top: 143px;
+  margin-bottom: 126px;
+}
+
+
+.creative-service-item {
+
+  position: relative;
+  padding: 0;
+  padding-bottom: 30px;
+}
+
+.creative-service-item-text {
+  width: 300px;
+  position: absolute;
+  left: 65px;
+  top: 100px;
+  color: #fff;
+}
+
+.creative-service-item-text h3 {
+  font-size: 20px;
+  letter-spacing: 0.8px;
+}
+
+.creative-service-item-text p{
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  letter-spacing: 0.52px;
+
+}
+
+.creative-service-item-text a {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffeb3b;
+}
+
+.creative-service-item:hover .creative-service-item-text,
+.creative-service-item:hover .creative-service-item-text a{
+  color: #000;
 }
