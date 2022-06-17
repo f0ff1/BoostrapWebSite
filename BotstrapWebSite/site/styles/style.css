@@ -37,6 +37,8 @@ margin-top: 64px;
 z-index: 3;
 } */
 
+
+
 .navbar {
   /* padding-top: 0; */
   position: absolute;
@@ -97,7 +99,11 @@ opacity: 0.3;
   margin-left: 140px;
 }
 
-.form-control {
+  .form-search-input {
+    visibility: hidden;
+  }
+
+.form-search-input {
   visibility: hidden;
 }
 
@@ -236,6 +242,7 @@ margin-right: 60px;
 
 .stats {
   background-color: #1d1f24;
+  background-image: url("../images/Client/background.jpg");
 }
 
 .stats-item i {
@@ -356,8 +363,10 @@ margin-right: 60px;
 }
 
 
+.creative-service {
+  margin-bottom: 168px;
+}
 .creative-service-item {
-
   position: relative;
   padding: 0;
   padding-bottom: 30px;
@@ -394,4 +403,227 @@ margin-right: 60px;
 .creative-service-item:hover .creative-service-item-text,
 .creative-service-item:hover .creative-service-item-text a{
   color: #000;
+}
+
+.our-client-head .creative-h2,
+.our-client-head .creative-p {
+  color: #fff;
+}
+
+.our-client {
+  background-color: #1d1f24;
+  background-image: url("../images/Client/background.jpg");
+}
+
+.our-client-head {
+
+  padding-top: 129px;
+  padding-bottom: 126px;
+}
+
+.our-client-text {
+  width: 936px;
+}
+
+.our-client-logotypes {
+  width: 1005px;
+  margin-left: 76px;
+  margin-top: 126px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ffda00;
+  /* width: 10px;
+  height: 10px; */
+}
+
+
+.col-our-team-head .creative-h2 {
+  font-size: 51px;
+}
+
+.team-image-placeholder {
+  width: 370px;
+  background-color: rgba(119,119,119,0.0);
+  border: 1px solid rgba(0,0,0,.1);
+
+  /* border: 1px solid red; */
+}
+
+.team-image-placeholder-text {
+  width: 280px;
+  margin-top: 29px;
+  margin-left: 45px;
+  /* margin-bottom: 29px; */
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.row-our-team-items {
+  margin-top: 115px;
+  padding-left: 50px;
+}
+
+.col-our-team-head .creative-p{
+  display: block;
+  width: 438px;
+  margin: 0 auto;
+}
+
+/* .col-our-team-item {
+  padding: 0;
+  margin: 0;
+} */
+
+.team-image-placeholder-text .creative-p {
+  font-size: 13px;
+  line-height: 1.69;
+  letter-spacing: 0.52px;
+  padding-bottom: 31px;
+}
+
+.team-image-placeholder-text h3 {
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  font-weight: 600;
+}
+
+.team-image-placeholder-social a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-text-stroke: 1px #dadada;;
+}
+
+.team-image-placeholder-social a:hover {
+  color: #ffeb3b;
+  -webkit-text-stroke: 1px #ffeb3b;
+}
+
+.team-image-placeholder-social {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  font-size: 35px;
+}
+
+.ourTeam {
+  margin-bottom: 143px;
+}
+
+
+.join-us {
+  background-image: url("../images/Footer/bg.jpg");
+}
+
+.col-join-us-head {
+  margin-top: 150px;
+  margin-bottom: 68px;
+}
+
+.col-join-us-head .creative-p {
+  display: block;
+  width: 444px;
+  margin: 0 auto;
+}
+
+.btn-send {
+  width: 139px;
+  color: #000;
+  background-color: #ffeb3b;
+  /* padding: 19px 50px; */
+  height: 50px;
+  width: 139px;
+  font-family: "OpenSans";
+  font-weight: 600;
+}
+
+.btn-send:hover {
+  color: #fff;
+}
+
+.form-mail {
+  width: 617px;
+  margin: 0 auto;
+}
+
+.col-join-us-head .creative-h2 {
+  font-size: 51px;
+  line-height: 0.39;
+  color: #fff;
+  padding-bottom: 36px;
+
+}
+
+.form-mail {
+  margin-bottom: 109px;
+}
+
+.form-control {
+  background-color: rgba(255,255,255,.2);
+  color: #fff;
+  padding-left: 19px;
+  border-color: rgba(255,255,255,.2);
+  border-width: 3px;
+  border-radius: 0;
+}
+
+.form-control::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.form-control:focus {
+    color: #fff;
+    background-color: rgba(255,255,255,.2);
+    border-color: #ffeb3b;
+    box-shadow: none;
+}
+
+.down-panel {
+  background-image: url("../images/Client/background.jpg");
+}
+
+.icon-footer-logo {
+  text-decoration: none;
+}
+
+.col-copytright p {
+  font-family: "Vidaloka", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 2.36;
+  color: #fff;
+}
+
+p mark {
+  background: none;
+  color: #ffeb3b;
+}
+
+.footer-social {
+  text-decoration: none;
+}
+
+.footer-social i {
+  font-size: 25px;
+  color: #fff;
+  padding-right: 15px;
+}
+
+
+.footer-social:hover i {
+  color: #ffeb3b;
+}
+
+.col-logotype-footer {
+  margin-top: 63px;
+}
+
+.col-copytright {
+  margin-top: 40px;
+}
+
+.col-social-footer {
+  margin-top: 50px;
 }
