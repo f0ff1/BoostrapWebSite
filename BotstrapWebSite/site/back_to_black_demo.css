@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Back to Black Demo';
+	src: url('../fonts/back_to_black_demo.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/back_to_black_demo.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/back_to_black_demo.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/back_to_black_demo.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/back_to_black_demo.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/back_to_black_demo.svg#back_to_black_demo') format('svg'); /* Chrome < 4, Legacy iOS */
+}

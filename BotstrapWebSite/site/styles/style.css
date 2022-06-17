@@ -1,0 +1,269 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+  font-family: 'Back to Black Demo';
+  src: url('../fonts/back_to_black_demo.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/back_to_black_demo.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('../fonts/back_to_black_demo.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/back_to_black_demo.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('../fonts/back_to_black_demo.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/back_to_black_demo.svg#back_to_black_demo') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+  background-color: #fdfff5;
+  font-family: "Vidaloka", "Arial", sans-serif;
+}
+
+/* header {
+margin-top: 64px;
+z-index: 3;
+} */
+
+.navbar {
+  /* padding-top: 0; */
+  position: absolute;
+  z-index: 3;
+  top: 65px;
+  left: 300px;
+}
+
+.logo-main-text {
+  font-size: 34px;
+  font-family: "Back to Black Demo", "Arial", sans-serif;
+  color: #fff;
+}
+
+.logo-additional-text {
+  font-size: 12px;
+  font-family: "Vidaloka", "Arial", sans-serif;
+  color: #e5432b;
+  line-height: 2.75;
+}
+
+/* header hr{
+margin: 0 282px 0 282px;
+width: 1320px;
+color: #fff;
+opacity: 0.3;
+} */
+
+.navbar .container {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 25px;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover  {
+  color: #ffeb3b;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  color: #ffeb3b;
+}
+
+.nav-link {
+  font-size: 13px;
+
+  color: #fff;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  width: 650px;
+  justify-content: space-between;
+  margin-left: 140px;
+}
+
+.form-control {
+  visibility: hidden;
+}
+
+.btn {
+  color: #fff;
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  color: yellow;
+}
+
+.btn:active {
+  background-color: rgb(245 245 245 / 50%);
+
+}
+
+.btn:focus {
+  background-color: rgb(245 245 245 / 50%);
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* .nav-item:hover::after {
+
+content: url("../images/Header/Hover.jpg");
+} */
+
+
+
+
+.carousel-item {
+  /* height: 1113px; */
+  width: 1905px;
+}
+
+.carousel-text h2{
+  font-size: 280px;
+  line-height: 270px;;
+}
+
+.carousel-text span {
+  font-size: 110px;
+  line-height: 200px;
+}
+.carousel-text {
+  font-family: "Back to Black Demo", "Arial", sans-serif;
+  color: #fff;
+  display: block;
+  width: 975px;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  top: 108px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+}
+
+
+.coreService h2 {
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.67;
+  color: #333;
+  margin: 0;
+  padding: 0 100px 0 100px;
+}
+
+
+.coreService .row {
+  justify-content: center;
+  margin-bottom: 95px;
+}
+
+.first-row {
+  margin-top: 120px;
+}
+
+.coreService p {
+  font-family: "Myriad Pro", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  letter-spacing: 0.52px;
+  color: #969595;
+}
+
+.coreService h3 {
+  font-family: "Vidaloka", "Arial", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  color: #313131;
+}
+
+u {
+  color: #ffeb3b;
+}
+
+/* .col-row-icon {
+width: 40px;
+}
+
+.col-row-icon {
+margin-right: 60px;
+} */
+
+.col-row-icon i {
+  font-size: 40px;
+  color: #f9f9f9;
+  -webkit-text-stroke: 1px rgba(0,0,0,.5);
+}
+
+.service-item {
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: rgb(245 245 245 / 50%);
+}
+
+.service-item:hover + .col-row-icon i{
+  color: #ffeb3b;
+}
+
+.second-row,
+.third-row{
+  flex-direction: row-reverse;
+}
+
+.stats {
+  background-color: #1d1f24;
+}
+
+.stats-item i {
+  font-size: 40px;
+  color: rgba(255,255,255, 0.01);
+  -webkit-text-stroke: 2px #ffeb3b;
+}
+
+.stats-item p{
+  font-family: "Vidaloka", "Arial", sans-serif;
+  font-size: 60px;
+  color: #fff;
+}
+
+.stats-item h3 {
+  font-family: "Vidaloka", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 3.82;
+  letter-spacing: 1.5px;
+  color: #ffeb3b;
+  text-transform: uppercase;
+}
+
+.stats-item {
+  align-items: center;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 93px;
+}
+
+.stats-icon {
+  padding-bottom: 58px;
+}
